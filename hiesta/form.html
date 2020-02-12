@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <title>Registration - HIESTA 2018</title>
+  <link rel="stylesheet" type="text/css" href="css/regis.css">
+  <link rel="shortcut icon" href="../images/hiesta logotr.png">
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/animate.min.css" rel="stylesheet"> 
+  <link href="css/font-awesome.min.css" rel="stylesheet">
+  <link href="css/lightbox.css" rel="stylesheet">
+  <link href="css/main-oxy.css" rel="stylesheet">
+  <link id="css-preset" href="css/presets/preset1.css" rel="stylesheet">
+  <link href="css/responsive.css" rel="stylesheet">
+
+
+  
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700' rel='stylesheet' type='text/css'>
+  <link rel="shortcut icon" href="images/hiesta logotr.png">
+</head><!--/head-->
+
+<body>
+
+  <!--.preloader-->
+  <div class="preloader"> <i class="fa fa-circle-o-notch fa-spin"></i></div>
+  <!--/.preloader-->
+
+  <header id="home">
+   
+    </div><!--/#home-slider-->
+    <div class="main-nav">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html">
+            <h1><img class="img-responsive" src="images/hiesta logotr.png" alt="logo"></h1>
+          </a>                    
+        </div>
+        <div class="collapse navbar-collapse">
+          <ul class="nav navbar-nav navbar-right">                 
+            <li class="scroll active"><a href="">Registration</a></li>       
+          </ul>
+        </div>
+      </div>
+    </div><!--/#main-nav-->
+  </header><!--/#home-->
+
+  <fieldset>
+  <h1>Registration</h1><br>
+    <div class="form">
+      <form action="formProcess.php" onsubmit="return validate_form()" method="POST" name="regisForm">
+          
+          
+        
+      <!-- <form action="formProcess.php" onsubmit="return validate()" method="" id="form" name="form-training"> -->
+        <label>Name:</label>
+        <span id="usernameStatus" class="error"></span>
+        <input type="text" name="txtName" id="txtName" placeholder="Name"></input><br>
+
+        <label>NIM:</label>
+        <span id="nimStatus" class="error"></span>
+        <input type="text" name="txtNim" id="txtNim" placeholder="NIM"></input><br>
+
+        <label>Phone Number:</label>
+        <span id="phoneStatus" class="error"></span>
+        <input type="text" name="txtPhone" id="txtPhone" placeholder="Phone Number"></input><br>
+
+        <label>Email:</label>
+        <span id="emailStatus" class="error"></span>
+        <input type="text" name="txtEmail" id="txtEmail" placeholder="Email Address"></input><br>
+        
+        <label>Vegetarian:</label>
+        <span id="vegeStatus" class="error"></span>
+        <br>
+        <input type="radio" name="txtVege" id="txtVegeYes" value="Yes">Yes
+        <input type="radio" name="txtVege" id="txtVegeNo" value="No">No<br>
+        <br>
+
+        <label>Pilihan Events:</label>
+          <span id="eventStatus" class="error"></span><br>
+          <input type="checkbox" name="txtEvent[]" id="txtEvent" value="seminar1" disabled><label>Seminar 1 @ Rp. 20.000</label><br/>
+          <input type="checkbox" name="txtEvent[]" id="txtEvent" value="seminar2" disabled><label>Seminar 2 @ Rp. 20.000</label><br/>
+          <input type="checkbox" name="txtEvent[]" id="txtEvent" value="workshop1" disabled><label>Seminar 1 & 2 @ Rp. 35.000</label><br/>
+          <input type="checkbox" name="txtEvent[]" id="txtEvent" value="workshop1" disabled><label>Workshop 1 @ Rp. 50.000</label><br/>
+          <input type="checkbox" name="txtEvent[]" id="txtEvent" value="workshop2" disabled><label>Study Tour Dalam Negeri @ Rp. 50.000 </label><br/>
+          <input type="checkbox" name="txtEvent[]" id="txtEvent" value="stln" disabled><label>Study Tour Luar Negeri <a href="form_stln.html">(Register Here For STLN)</a></label><br/>
+          <br><br><br><br>
+        <input type="submit" id="btnSubmit" value="Register"></input>
+        <!-- <button type="button" value="submit" onclick="validate()">SUBMIT</button> -->
+      </form>
+    </fieldset>   
+  </div>
+
+  <footer id="footer">
+    <div class="footer-top wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="300ms">
+      <div class="container text-center">
+        <div class="footer-logo">
+          <a href="index.html"><img class="img-responsive" src="images/hiesta logotr.png" alt=""></a>
+        </div>
+        <div class="social-icons">
+          <ul>                      
+            <li><a class="facebook" href="https://www.facebook.com/Hiesta2018"><i class="fa fa-facebook"></i></a></li>
+            <li><a class="instagram" href="https://www.instagram.com/hiesta_2018/"><i class="fa fa-instagram"></i></a></li>   
+            <li><a class="Line" href="http://line.me/ti/p/~@tng5900j"><i class="fa fa-Line"></i></a></li>      
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script type="text/javascript" src="js/jquery.js"></script>
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=true"></script>
+  <script type="text/javascript" src="js/jquery.inview.min.js"></script>
+  <script type="text/javascript" src="js/wow.min.js"></script>
+  <script type="text/javascript" src="js/mousescroll.js"></script>
+  <script type="text/javascript" src="js/smoothscroll.js"></script>
+  <script type="text/javascript" src="js/jquery.countTo.js"></script>
+  <script type="text/javascript" src="js/lightbox.min.js"></script>
+  <script type="text/javascript" src="js/main.js"></script>
+  <script type="text/javascript" src="js/validasi.js"></script>
+</body>
+</html>
